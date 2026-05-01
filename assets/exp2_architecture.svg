@@ -1,0 +1,21 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cbd5e1" />
+    </marker>
+  </defs>
+  <rect width="600" height="400" fill="#0f172a" rx="15" />
+  
+  <rect x="50" y="150" width="100" height="100" fill="#1e293b" stroke="#334155" stroke-width="2" rx="10" />
+  <text x="100" y="205" fill="#94a3b8" font-family="Arial" font-size="14" text-anchor="middle">Observed Data</text>
+  
+  <rect x="250" y="130" width="120" height="140" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2" rx="10" />
+  <text x="310" y="180" fill="#dbeafe" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Likelihood L(θ)</text>
+  <text x="310" y="220" fill="#94a3b8" font-family="Arial" font-size="12" text-anchor="middle">Optimization</text>
+  
+  <rect x="450" y="150" width="100" height="100" fill="#064e3b" stroke="#059669" stroke-width="2" rx="10" />
+  <text x="500" y="205" fill="#d1fae5" font-family="Arial" font-size="14" text-anchor="middle">Estimated θ*</text>
+  
+  <line x1="150" y1="200" x2="245" y2="200" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="370" y1="200" x2="445" y2="200" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)" />
+</svg>

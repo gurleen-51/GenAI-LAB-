@@ -1,0 +1,43 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cbd5e1" />
+    </marker>
+  </defs>
+  
+  <rect width="600" height="400" fill="#0f172a" rx="15" />
+  
+  <!-- Input -->
+  <rect x="20" y="150" width="60" height="100" fill="#1e293b" stroke="#334155" stroke-width="2" rx="5" />
+  <text x="50" y="205" fill="#94a3b8" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(-90 50 205)">Input X</text>
+  
+  <!-- Encoder -->
+  <path d="M 100 120 L 220 160 L 220 240 L 100 280 Z" fill="#1e3a8a" stroke="#3b82f6" stroke-width="2" />
+  <text x="160" y="205" fill="#dbeafe" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Encoder</text>
+  
+  <!-- Latent Space (mu, sigma) -->
+  <rect x="240" y="140" width="80" height="40" fill="#1e293b" stroke="#334155" stroke-width="1" rx="5" />
+  <text x="280" y="165" fill="#94a3b8" font-family="Arial" font-size="12" text-anchor="middle">μ (Mean)</text>
+  <rect x="240" y="220" width="80" height="40" fill="#1e293b" stroke="#334155" stroke-width="1" rx="5" />
+  <text x="280" y="245" fill="#94a3b8" font-family="Arial" font-size="12" text-anchor="middle">σ (LogVar)</text>
+  
+  <!-- Sampling -->
+  <circle cx="380" cy="200" r="30" fill="#4c1d95" stroke="#7c3aed" stroke-width="2" />
+  <text x="380" y="205" fill="#f5f3ff" font-family="Arial" font-size="12" text-anchor="middle">Sampling</text>
+  <text x="380" y="160" fill="#a78bfa" font-family="Arial" font-size="10" text-anchor="middle">z = μ + σ·ε</text>
+  
+  <!-- Decoder -->
+  <path d="M 440 160 L 560 120 L 560 280 L 440 240 Z" fill="#581c87" stroke="#a855f7" stroke-width="2" />
+  <text x="500" y="205" fill="#f3e8ff" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Decoder</text>
+  
+  <!-- Reconstructed -->
+  <rect x="570" y="150" width="10" height="100" fill="#a855f7" opacity="0.5" />
+  
+  <!-- Arrows -->
+  <line x1="80" y1="200" x2="100" y2="200" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="220" y1="180" x2="235" y2="160" stroke="#cbd5e1" stroke-width="1" marker-end="url(#arrowhead)" />
+  <line x1="220" y1="220" x2="235" y2="240" stroke="#cbd5e1" stroke-width="1" marker-end="url(#arrowhead)" />
+  <line x1="320" y1="160" x2="355" y2="185" stroke="#cbd5e1" stroke-width="1" marker-end="url(#arrowhead)" />
+  <line x1="320" y1="240" x2="355" y2="215" stroke="#cbd5e1" stroke-width="1" marker-end="url(#arrowhead)" />
+  <line x1="410" y1="200" x2="435" y2="200" stroke="#cbd5e1" stroke-width="2" marker-end="url(#arrowhead)" />
+</svg>
